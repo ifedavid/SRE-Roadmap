@@ -1,6 +1,6 @@
 # Project 1: Understanding Basic Linux Process Monitoring
 
-This project has been instrumental in helping me understand the fundamentals of Linux process monitoring. Through hands-on experience, I have learned to use several essential commands that are crucial for system administration and performance tuning.
+This project [server performance stats](https://roadmap.sh/projects/server-stats) has been instrumental in helping me understand the fundamentals of Linux process monitoring. Through hands-on experience, I have learned to use several essential commands that are crucial for system administration and performance tuning.
 
 ## Key Learnings
 
