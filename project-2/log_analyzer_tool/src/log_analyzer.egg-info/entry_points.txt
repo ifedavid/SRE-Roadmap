@@ -1,0 +1,2 @@
+[console_scripts]
+log_analyzer = log_analyzer.cli:app

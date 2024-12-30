@@ -1,0 +1,12 @@
+[project]
+description = "Log analyzer. Created as part of https://roadmap.sh/projects/log-archive-tool task"
+name = "log_analyzer"
+version = "1.0.0"
+dependencies = [
+"typer[all]"
+]
+requires-python = ">=3.9"
+license = {text = "MIT License"}
+
+[project.scripts]
+log_analyzer = "log_analyzer.cli:app"
