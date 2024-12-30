@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: log_analyzer
-Version: 1.0.0
-Summary: Log analyzer. Created as part of https://roadmap.sh/projects/log-archive-tool task
-License: MIT License
-Requires-Python: >=3.9
-Requires-Dist: typer[all]
