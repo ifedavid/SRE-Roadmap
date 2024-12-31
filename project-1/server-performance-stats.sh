@@ -19,6 +19,6 @@ echo "Disk usage: $disk_usage"
 echo "Top 5 CPU consuming processes: $top_5_cpu_processes"
 echo "Top 5 Memory consuming processes: $top_5_mem_processes"
 
-The script above fetches the CPU usage, memory usage, disk usage and the top 5 CPU and memory consuming processes.
-To run the script, save it in a file named server-performance-stats.sh and run the following command:
-chmod +x server-performance-stats.sh
+# The script above fetches the CPU usage, memory usage, disk usage and the top 5 CPU and memory consuming processes.
+# To run the script, save it in a file named server-performance-stats.sh and run the following command:
+# chmod +x server-performance-stats.sh
