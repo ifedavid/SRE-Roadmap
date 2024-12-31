@@ -23,18 +23,17 @@ def analyze(log_path: Optional[str] = typer.Argument(default=None)):
         text=True,
     )
 
-    print(log_files.stdout)
-
     if not log_files.stdout:
         raise typer.BadParameter("No log files found in the specified directory", log_files.stderr)
     
     typer.echo(f"Found log files: {log_files.stdout}")
+    log_files_format = log_files.stdout.replace("\n", " ")
 
     typer.echo("Archiving logs...")
 
     Path(f"{HOME_DIRECTORY}/archived_logs").mkdir(exist_ok=True)
     result = subprocess.run(
-        f"tar -czvf {HOME_DIRECTORY}/archived_logs/log_archive.{datetime.now().strftime('%Y%m%d_%H%M%S')}.tar.gz {log_files.stdout}", 
+        f"tar -czvf {HOME_DIRECTORY}/archived_logs/log_archive.{datetime.now().strftime('%Y%m%d_%H%M%S')}.tar.gz {log_files_format}", 
         shell=True, 
         capture_output=True,
         text=True,
@@ -45,6 +44,7 @@ def analyze(log_path: Optional[str] = typer.Argument(default=None)):
         typer.echo(f"Failed to archive logs: {result.stderr}", err=True)
         typer.Exit(code=result.returncode)
     else:
+        print(result.stdout)
         print(f"Logs archived at {HOME_DIRECTORY}/archived_logs")
         print("Analysis adn archiving complete!")
 
