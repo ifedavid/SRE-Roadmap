@@ -12,3 +12,5 @@ Project 4 -
 
 Project 5 -
 [SSH remote server setup](https://roadmap.sh/projects/ssh-remote-server-setup)
+
+Project 6 - [Static site server](https://roadmap.sh/projects/static-site-server)
